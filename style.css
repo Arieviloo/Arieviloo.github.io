@@ -1,0 +1,235 @@
+*, body {
+  margin: 0;
+  padding: 0;
+  
+  width: 100%;
+  height: 100%;
+  text-decoration:none;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d1d1d;
+  color: #fff;
+
+}
+
+.top-tags {
+position: fixed;
+padding-left: 50px;
+font-family: 'La Belle Aurore', cursive;
+color: #515152;
+display: flex;
+justify-content: flex-start;
+}
+.bottom-tags {
+  display: flex;
+  align-items: flex-end;
+  color: #515152;
+  position: fixed;
+  bottom: 0;
+  font-size: 18px;
+  font-family: 'La Belle Aurore',cursive;
+  padding-left: 50px;
+
+}
+h1:before {
+  content: '<h1>';
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  font-size: 18px;
+  position: fixed;
+  margin-top: -40px;
+}
+h1::after {
+  content: '</h1>';
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  font-size: 18px;
+  position: absolute;
+  margin-top: 18px;
+  margin-left: 20px;
+  -webkit-animation: myanim2 1s 1.7s backwards;
+  animation: myanim2 1s 1.7s backwards;
+}
+
+h2 {
+  color: #8d8d8d;
+  font-weight: 400;
+  font-size: 11px;
+  font-family: "Open Sans",sans-serif;
+  letter-spacing: 3px;
+  -webkit-animation: myanim2 1s 1.8s backwards;
+  animation: myanim2 1s 1.8s backwards;
+  margin-top: 20px;
+  margin-left: 2px;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration:none;
+}
+.text-zone {
+  background-color: blanchedalmond;
+}
+
+.text-zone span{
+  font-family: 'Comic Neue', cursive;
+  user-select: none;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: 60px !important;
+  color: #fff;
+  line-height: 53px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.text-zone img {
+  width: 40px;
+  height: 40px;
+}
+
+.te {
+  font-size: 22px;
+  width: 400px;
+  height: 150px;
+  color: #fff;
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+.te2 {
+  font-size: 22px;
+  width: 400px;
+  height: 500px;
+  color: #fff;
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+
+.te .intro__secondary--text{
+  position: fixed;
+  color: aqua;
+  z-index: 1;
+}
+.te .intro__secondary--text a{
+  color: aqua;
+}
+
+.intro__secondary--text {
+  margin-top: -80px;
+  font-size: 20px;
+  font-family: 'Source Code Pro', monospace;
+  color: #fff;  
+}
+.intro__texts-blinking a:hover{
+ cursor: pointer;
+}
+.intro__texts-blinking {
+  animation: blinking .8s step-start infinite;
+}
+@keyframes blinking {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+/* oucss */
+
+#root {
+  background-color: #1d1d1d;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.intro {
+/* width: 900px;
+height: 100%; */
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.intro__texts {
+max-width: 900px;
+color: #fff;
+display: flex;
+flex-direction: column-reverse;
+font-family: 'Source Code Pro', monospace;
+font-size: 22px;
+}
+
+.intro__texts h3 a {
+text-decoration: none;
+color:  #0f0;
+font-size: 16px;
+}
+
+.intro__texts a {
+text-decoration: none;
+color: #0ff
+}
+
+.intro__texts pre {
+font-size: 14px;
+
+}
+
+.intro__main-text {
+max-width: 900px;
+padding-top: -500px;
+font-size: 46px;
+text-align: center;
+}
+
+.intro__secondary--text {
+font-size: 20px;
+}
+
+.intro__texts-blinking {
+animation: blinking .8s step-start infinite;
+}
+
+.social {
+  position: fixed;
+  z-index: 1;
+}
+.social a img {
+opacity: 0.7;
+margin: 30px 5px 0 5px;
+width: 40px;
+height: 40px;
+}
+.social a img:hover {
+transform: rotate(10deg);
+opacity: 1.0;
+
+}
+
+@keyframes blinking {
+50% {
+opacity: 0;
+}
+}
+
+@media(max-width: 400px) {
+.intro__main-text {
+font-size: 32px;
+}
+
+.intro__secondary--text {
+font-size: 16px;
+}
+
+
+
